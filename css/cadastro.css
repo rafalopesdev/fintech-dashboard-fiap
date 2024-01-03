@@ -1,0 +1,53 @@
+.container-cad {
+  width: 400px;
+  margin: 0 10px;
+  background: linear-gradient(
+    217deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.1) 50%
+  );
+  padding: 30px;
+  border-radius: 1em;
+  border: 0.4px solid #5a88b4;
+  backdrop-filter: blur(10px);
+}
+
+.form input {
+  width: 100%;
+  border-radius: 0.2em;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+.form input:focus {
+  outline: 2px #5a88b4 solid;
+  transition: 0.2s;
+}
+.ct-select {
+  width: 100%;
+  color: #5a88b4;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-content: center;
+  cursor: pointer;
+}
+.ct-select input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  color: aqua;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.ct-select input[type='radio'] {
+  background: red;
+}
+#message,
+#btnLogin {
+  color: #5a88b4;
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}

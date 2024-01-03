@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+p,
+form,
+input {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+select {
+  margin-top: 0;
+  outline: none;
+}
+a:link {
+  text-decoration: none;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>Dashboard</title>
+</head>
+
+<body class="w-100 d-flex">
+  <div class="container-nav">
+    <ul class="w-100 d-flex flex-column p-4">
+      <li><a href="#" class="d-flex align-items-center"><i class=" fa-regular fa-user icon-menu"></i>Minha conta</a></li>
+      <li><a href="#" class="d-flex align-items-center"><i class="fa-regular fa-comment-dots icon-menu"></i>Mensagem</a></li>
+      <li><a href="#" class="d-flex align-items-center"><i class="fa-regular fa-bell icon-menu"></i>Notificação</a></li>
+      <li><a href="#" class="d-flex align-items-center"><i class="fa-regular fa-file-lines icon-menu"></i>Relatórios</a></li>
+      <li><a href="#" class="d-flex align-items-center"><i class="fa-solid fa-gear icon-menu"></i>Configuração</a></li>
+      <li><a href="#" class="d-flex align-items-center"><i class="fa-solid fa-headset icon-menu"></i>Fale conosco</a></li>
+    </ul>
+    <div class="btn-exit p-3">
+      <a href="login.html">Logoff >></a>
+    </div>
+
+  </div>
+  <div class="w-100 p-4">
+    <div class="grid-2-col">
+      <div class="grid-2-col">
+        <span class="color-text">Rafael, seja bem-vindo!</span>
+        <a href="#" class="w-100 btn-account text-center">Criar minha conta<i class="fa-solid fa-plus ms-1"></i></a>
+      </div>
+      <span class="w-100 text-end">Seu saldo atual é de: <strong class="fs-5 fw-bold text-success">R$ 0,00</strong></span>
+    </div>
+    <div class="w-100">
+      <div class="w-100 grid-2-col-w">
+        <div class="grid-3-col">
+          <div class="grid-col rounded bd-shadow">
+            <span class="text-center">Saldo das Receitas</span>
+            <div class="d-flex justify-content-between">
+              <p class="w-100 fs-5 fw-bold text-success">R$ 0,00</p>
+            </div>
+          </div>
+          <div class="grid-col rounded bd-shadow">
+            <span>Saldo das Despesas</span>
+            <div class="d-flex justify-content-between">
+              <p class="w-100 fs-5 fw-bold text-danger">R$ 0,00</p>
+            </div>
+          </div>
+          <div class="grid-col rounded bd-shadow">
+            <span>Saldo das Metas</span>
+            <div class="d-flex justify-content-between">
+              <p class="w-100 fs-5 fw-bold text-secondary">R$ 0,00</p>
+            </div>
+          </div>
+        </div>
+        <span class="insert-items">Inserir transação +</span>
+      </div>
+    </div>
+    <div class="flex-2-col">
+      <div class="w-100 bg-white flex-col p-3 rounded bd-shadow scrolling-wrapper">
+        <span>Novembro - Todos os lançamentos</span></br>
+        <div class="d-block">
+          <div class="d-flex align-items-center justify-content-between fs-mobile mt-2">
+            <span class="text-start">Conta de luz</span>
+            <span class="text-center text-danger">Despesa</span>
+            <span class="text-center">16/11</span>
+            <span class="text-center">R$ 96,23</span>
+            <span class="insert-items btn-edit">Editar +</span>
+          </div>
+          <div class="d-flex align-items-center justify-content-between fs-mobile mt-2">
+            <span class="text-start">Conta de luz</span>
+            <span class="text-center text-danger">Despesa</span>
+            <span class="text-center">16/11</span>
+            <span class="text-center">R$ 96,23</span>
+            <span class="insert-items btn-edit">Editar +</span>
+          </div>
+          <div class="d-flex align-items-center justify-content-between fs-mobile mt-2">
+            <span class="text-start">Conta de luz</span>
+            <span class="text-center text-danger">Despesa</span>
+            <span class="text-center">16/11</span>
+            <span class="text-center">R$ 96,23</span>
+            <span class="insert-items btn-edit">Editar +</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal criar conta -->
+  <div class="container-modal-account">
+    <div class="wrap-modal rounded">
+      <h3 class="text-center text-color-blue">Cadastrar conta</h3>
+      <i class="fa-solid fa-xmark close-account"></i>
+      <form action="" method="" class="form">
+        <input type="text" name="nome" placeholder="Nome da conta" class="w-100 p-2 rounded-2"><br>
+        <input type="number" name="valor" placeholder="Saldo inicial" class="w-100 p-2 rounded-2"><br>
+        <input type="number" name="valor" placeholder="Saldo final" class="w-100 p-2 rounded-2"><br>
+        <button class="mt-4 rounded btn">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+  <!-- Modal Receitas -->
+  <div class="container-modal">
+    <div class="wrap-modal rounded">
+      <h3 class="text-center text-color-blue">Inserir transação</h3>
+      <i class="fa-solid fa-xmark close"></i>
+      <form action="" method="" class="form">
+        <input type="text" name="nome" placeholder="Nome do item" class="w-100 p-2 rounded-2"><br>
+        <div>
+          <div class="ct-select">
+            <input type="radio" name="tipo" value="pf" id="receita">
+            <label for="receita">Receita</label>
+          </div>
+          <div class="ct-select">
+            <input type="radio" name="tipo" id="despesa">
+            <label for="despesa">Despesa</label>
+          </div>
+          <div class="ct-select">
+            <input type="radio" name="tipo" id="meta">
+            <label for="meta">Meta</label>
+          </div>
+        </div>
+        <input type="date" name="valor" placeholder="Valor da despesa" class="w-100 p-2 rounded-2"><br>
+        <input type="number" name="valor" placeholder="Valor da despesa" class="w-100 p-2 rounded-2"><br>
+        <button class="mt-4 rounded btn">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+  <script src="js/graphic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
